@@ -50,10 +50,17 @@ puts product2.describe
 
 In this example:
 
-1. The `Factory` class includes a `create` method that takes a class name and any additional arguments to pass to the constructor. It uses metaprogramming to check if a class with the given name exists and, if so, dynamically creates an instance of that class.
+1. The `Factory` class includes a `create` method that takes a class name and
+any additional arguments to pass to the constructor. It uses metaprogramming
+to check if a class with the given name exists and, if so, dynamically creates
+an instance of that class.
 
-2. Two product classes (`ProductA` and `ProductB`) are defined. These classes have their constructors, and they implement a `describe` method.
+2. Two product classes (`ProductA` and `ProductB`) are defined. These classes
+have their constructors, and they implement a `describe` method.
 
-3. In the usage section, the `Factory` is used to create instances of the product classes dynamically based on their class names.
+3. In the usage section, the `Factory` is used to create instances of the
+product classes dynamically based on their class names.
 
-This metaprogramming approach allows you to create objects based on class names at runtime, making it useful for scenarios where you need to create objects dynamically without knowing the exact class in advance.
+This metaprogramming approach allows you to create objects based on class
+names at runtime, making it useful for scenarios where you need to create
+objects dynamically without knowing the exact class in advance.
